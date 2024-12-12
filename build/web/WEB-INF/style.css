@@ -1,0 +1,57 @@
+.body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f8b400;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul li {
+            margin: 0 10px;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+        }
+        .nav ul li a:hover {
+            background-color: #fff;
+            color: #f8b400;
+            border-radius: 5px;
+        }
+        .main {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 12, 2024, 12:52:35 AM
+    Author     : User
+*/
+
