@@ -28,37 +28,7 @@
             padding: 20px;
         }
         */
-        header {
-            background-color: #3e82c6;
-            padding: 1rem;
-            color: white;
-            border-radius: 15px;
-        }
 
-        .top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
 
         .container {
             background: white;
@@ -163,20 +133,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="logo">ToyLand</div>
-            <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="NewArrivals.jsp">New Arrivals</a></li>
-                <li><a href="About.jsp">About</a></li>
-                <li><a href="Contact.jsp">Contact</a></li>
-                <li><a href="Login.jsp">Login</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+
+<%@include file="Include/header.jsp" %>
     
     
     <div class="container">
@@ -238,5 +197,6 @@
             }
         }
     </script>
+    <%@include file="Include/footer.jsp"%>
 </body>
 </html>

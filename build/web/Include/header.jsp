@@ -1,10 +1,16 @@
+<%-- 
+    Document   : header
+    Created on : Dec 16, 2024, 3:06:04 PM
+    Author     : User
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToyLand - Your Magical Toy Store</title>
-    <style>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <style>
         * {
             margin: 0;
             padding: 0;
@@ -165,11 +171,9 @@
             text-decoration: none;
         }
     </style>
-</head>
-<body>
-    
-<!--<%@include file="Include/header.jsp" %>-->
-    <section class="hero">
+    </head>
+    <body>
+        <section class="hero">
         <header>
         <div class="top-bar">
             <div class="logo">ToyLand</div>
@@ -184,84 +188,6 @@
             </nav>
         </div>
     </header>
-
-
-        
-        <h1>Welcome to ToyLand</h1>
-        <p>Discover the perfect toys for every age and imagination</p>
-        <a href="#shop" class="cta-button">Shop Now</a>
-    </section>
-
-    <section class="featured">
-        <h2>Featured Products</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="Images/Toy1.jpeg" alt="Toy 1">
-                <h3>Educational Building Blocks</h3>
-                <p>$29.99</p>
-                <a href="#" class="cta-button">Add to Cart</a>
-            </div>
-            <div class="product-card">
-                <img src="Images/Toy2.jpg" alt="Toy 2">
-                <h3>Remote Control Car</h3>
-                <p>$49.99</p>
-                <a href="#" class="cta-button">Add to Cart</a>
-            </div>
-            <div class="product-card">
-                <img src="Images/Toy3.jpg" alt="Toy 3">
-                <h3>Interactive Robot</h3>
-                <p>$79.99</p>
-                <a href="#" class="cta-button">Add to Cart</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="categories">
-        <h2>Shop by Category</h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <h3>Educational Toys</h3>
-                <p>Learn through play</p>
-            </div>
-            <div class="category-card">
-                <h3>Outdoor Toys</h3>
-                <p>Adventure awaits</p>
-            </div>
-            <div class="category-card">
-                <h3>Board Games</h3>
-                <p>Family fun time</p>
-            </div>
-            <div class="category-card">
-                <h3>Arts & Crafts</h3>
-                <p>Spark creativity</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>ToyLand is your one-stop shop for quality toys and games for all ages.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>Email: info@toyland.com</li>
-                    <li>Phone: (555) 123-4567</li>
-                    <li>Address: 123 Toy Street</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
+        </section>
+    </body>
 </html>
