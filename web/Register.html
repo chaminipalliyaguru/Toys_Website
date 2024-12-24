@@ -1,16 +1,15 @@
-<%-- 
-    Document   : header
-    Created on : Dec 16, 2024, 3:06:04 PM
-    Author     : User
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
         <style>
             * {
                 margin: 0;
@@ -171,10 +170,72 @@
                 color: white;
                 text-decoration: none;
             }
+            
+
+
+            .form-container {
+                background-color: #f5dc05;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+                margin-left: 35rem;
+                margin-top: 3rem;
+            }
+
+            .form-container h2 {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: #333;
+            }
+
+            table {
+                width: 100%;
+                border-spacing: 0 1rem;
+            }
+
+            td {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 0.8rem;
+                margin-top: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+                outline: none;
+            }
+
+            input[type="submit"] {
+                background-color: #3e82c6;
+                color: white;
+                border: none;
+                padding: 1rem;
+                font-size: 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #1e5b8f;
+            }
+
+            input[type="submit"]:focus {
+                outline: none;
+            }
+            
         </style>
     </head>
     <body>
-        <section class="hero">
+       <section class="hero">
             <header>
                 <div class="top-bar">
                     <div class="logo">ToyLand</div>
@@ -190,5 +251,34 @@
                 </div>
             </header>
         </section>
+        <form method="POST" action="Login.jsp">
+            <div class="form-container">
+            <table>               
+                <tbody>
+                <h1>Registration Form</h1>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td><input type="text" name="signupName"/></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="signupEmail"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="signupPassword"/></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td><input type="password" name="confirmPassword"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="Login"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </form>
     </body>
 </html>
