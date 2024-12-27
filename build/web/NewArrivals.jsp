@@ -4,6 +4,11 @@
     Author     : User
 --%>
 
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="user.module.DbConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -200,7 +205,7 @@
     </section>
 
     <section class="products-grid">
-        <div class="product-card">
+<!--        <div class="product-card">
             <div class="product-image">
                 <img src="/api/placeholder/280/250" alt="Smart Robot Kit">
                 <span class="new-tag">New</span>
@@ -215,7 +220,55 @@
                 <div class="product-price">$89.99</div>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
+        </div>-->
+
+<%
+Connection con = DbConnector.getConnection();
+String query = "SELECT name,description, age, rate, price, img FROM newarrivals";
+
+Statement stmt = null;
+ResultSet rs = null;
+
+try{
+    stmt = con.createStatement();
+    rs = stmt.executeQuery(query);
+    
+    while(rs.next()){
+    
+    %>
+    
+    <div class="product-card">
+            <div class="product-image">
+                <img src="<%= rs.getString("img") %>" alt="Magnetic Building Blocks">
+                <span class="new-tag">New</span>
+            </div>
+            <div class="product-info">
+                <h3><%= rs.getString("name")%></h3>
+                <p><%= rs.getString("description") %></p>
+                <div class="product-meta">
+                    <span>Age: <%= rs.getInt("age") %>+</span>
+                    <span>★★★★½ (<%= rs.getInt("rate")%>)</span>
+                </div>
+                <div class="product-price">$<%= rs.getInt("price")%></div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
         </div>
+                
+                <%
+                }
+}catch (Exception e){
+e.printStackTrace();
+} finally {
+try {
+                        if (rs != null) rs.close();
+                        if (stmt != null) stmt.close();
+                        if (con != null) con.close();
+                    } catch (SQLException se) {
+                        se.printStackTrace();
+                    }
+}
+                %>
+
 
         <div class="product-card">
             <div class="product-image">

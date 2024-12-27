@@ -167,7 +167,7 @@
     <section class="our-story">
         <div class="story-content">
             <div class="story-image">
-                <img src="/api/placeholder/600/400" alt="ToyLand Store">
+                <img src="Images/about.png" alt="ToyLand Store">
             </div>
             <div class="story-text">
                 <h2>How It All Started</h2>
@@ -206,17 +206,17 @@
         <h2>Meet Our Team</h2>
         <div class="team-grid">
             <div class="team-member">
-                <img src="/api/placeholder/200/200" alt="Team Member 1">
-                <h3>Sarah Johnson</h3>
+                <img src="Images/about_2.JPG" alt="Team Member 1">
+                <h3>Chamini Palliyaguru</h3>
                 <p>Founder & CEO</p>
             </div>
             <div class="team-member">
-                <img src="/api/placeholder/200/200" alt="Team Member 2">
+                <img src="Images/about_1.JPG" alt="Team Member 2">
                 <h3>Michael Chen</h3>
                 <p>Head of Product</p>
             </div>
             <div class="team-member">
-                <img src="/api/placeholder/200/200" alt="Team Member 3">
+                <img src="Images/about_3.jpg" alt="Team Member 3">
                 <h3>Emma Williams</h3>
                 <p>Customer Experience</p>
             </div>
