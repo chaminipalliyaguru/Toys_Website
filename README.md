@@ -22,6 +22,10 @@ This is an e-commerce toy website where customers can browse and purchase toys. 
 - **Backend**: The website can integrate with a backend to handle user authentication, payments, and orders (Java).
 - **Database**: For storing user data, orders, and product information (MySQL).
 
+## Home page
+![1737052387328](https://github.com/user-attachments/assets/1e4a44e3-4fa9-46be-8cbe-7b4a89d3ba69)
+
+
 ## Installation
 
 1. Clone this repository:
